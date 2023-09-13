@@ -1,0 +1,259 @@
+
+
+/* App Styles */
+/* =============================================================================== */
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End of App Styles */
+/* =============================================================================== */
+
+/* =============================================================================== */
+/* Scraper Styles */
+
+#scraper-app {
+  box-sizing: border-box;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border-left: 2px solid #F5F4F7;
+  margin: 30px 5px;
+
+  width: 100%;
+  max-width: 1078px;
+  min-height: 400px;
+
+  display: grid;
+  grid-template-rows: 60px 1fr;
+}
+
+#heading {
+  background-color: #87C3A0;
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.scraper-h1 {
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#body-section {
+  margin-top: 20px;
+}
+
+.m-space {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.vertical-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.digit-input-form {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.digit-input::-webkit-inner-spin-button,
+.digit-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.digit-input {
+  -moz-appearance: textfield; /* For Firefox */
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+
+  text-align: center;
+  font-size: 16px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.digit-input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.digit-input:hover {
+  outline: none;
+  border-color: #888;
+}
+
+.digit-input-form label {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+@media screen and (min-width: 730px) {
+  #scraper-typeSelection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #body-section {
+    margin-left: 25px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.form-item {
+  margin-bottom: 20px;
+}
+
+#upload-csv-label {
+  color: #87C3A0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#upload-csv-label:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.select-div {
+  width: 100%;
+  max-width: 350px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.info-icon {
+  margin-left: 5px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.info-icon-bottom {
+  margin-left: -10px;
+}
+
+.info-icon-icon {
+  width: 15px;
+  cursor: pointer;
+}
+
+.info-box {
+  position: absolute;
+  width: 300px;
+  padding: 5px;
+  text-align: center;
+}
+
+.transparent-box {
+  position: absolute;
+  background-color: #333333;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 0;
+  border-radius: 5px;
+}
+
+.info-text {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.enrichment-options {
+  display: flex;
+  color: #757575;
+}
+
+.estimates {
+  margin-left: 20px;
+}
+
+.estimates span {
+  color: #757575;
+}
+
+.submit-btn {
+  background-color: #87C3A0;
+  color: white;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: 2px solid #F5F4F7;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #5f9c7f;
+  cursor: pointer;
+}
+
+#progress-bar {
+  height: 30px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin-top: 15px;
+  position: relative;
+}
+
+#percent-bar {
+  background-color: #87C3A0;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+#percent {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  color: white;
+}
+
+#download-btn {
+  margin-top: 20px;
+}
+
+.warning {
+  color: #757575;
+  font-style: italic;
+}
+
+.checkbox-w-info {
+  margin-right: 0px;
+}
+
+/* End of Scraper Styles */
+/* =============================================================================== */
